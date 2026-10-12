@@ -203,10 +203,10 @@ with st.sidebar:
     st.markdown("##### 🎯 Đề Tài: Khảo sát Cell-Free Massive MIMO cho 6G")
     st.caption("Khảo sát kiến trúc Cell-Free Massive MIMO: Distributed AP, User-Centric Serving, Macro-Diversity & Fairness.")
     
-    st.markdown("---")
     st.markdown("##### 📱 Quét QR để trải nghiệm trên Mobile")
-    qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://10.246.0.105:8502"
-    st.image(qr_url, caption="http://10.246.0.105:8502", use_container_width=True)
+    web_url = "https://n8thongtindidonggk-jtfw3us2u2uv6mqukunczo.streamlit.app/"  # Dán link Cloud của bạn vào đây
+    qr_url = f"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={web_url}"
+    st.image(qr_url, caption=web_url, use_container_width=True)
 
 # Telemetry Tag cố định ở đầu trang
 st.markdown("""
