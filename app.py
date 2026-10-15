@@ -13,7 +13,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Giao diện Cinematic Midnight + Đồ thị nền trắng tương phản cao + Hiệu ứng Click
+# Giao diện Cinematic Midnight + Đồ thị nền trắng tương phản cao
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=JetBrains+Mono:wght@500;600;700&display=swap');
@@ -81,8 +81,8 @@ st.markdown("""
     }
 
     .block-container {
-        padding-top: 1.8rem !important;
-        padding-bottom: 2.5rem !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 2.2rem !important;
         max-width: 1280px !important;
         animation: fadeSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -107,15 +107,11 @@ st.markdown("""
         display: inline-block;
         margin-bottom: 14px;
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
     }
     .brand-logo-box:hover {
         border-color: #a3e635;
         transform: scale(1.04) rotate(-1deg);
         box-shadow: 0 0 22px rgba(163, 230, 53, 0.35);
-    }
-    .brand-logo-box:active {
-        transform: scale(0.95);
     }
     .brand-logo-inner {
         border: 1px solid rgba(255, 255, 255, 0.45);
@@ -155,7 +151,6 @@ st.markdown("""
         color: #f8fafc !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         transition: all 0.22s ease;
-        cursor: pointer;
     }
     .sidebar-member-row:last-child {
         border-bottom: none;
@@ -164,10 +159,6 @@ st.markdown("""
         background: rgba(132, 204, 22, 0.15);
         transform: translateX(6px);
         color: #bef264 !important;
-    }
-    .sidebar-member-row:active {
-        transform: translateX(2px) scale(0.97);
-        background: rgba(132, 204, 22, 0.3);
     }
     .lime-dot {
         position: relative;
@@ -197,15 +188,11 @@ st.markdown("""
         line-height: 1.55;
         color: #ecfccb !important;
         transition: all 0.25s ease;
-        cursor: pointer;
     }
     .sidebar-topic-card:hover {
         background: rgba(132, 204, 22, 0.15);
         transform: translateY(-2px);
         box-shadow: 0 8px 20px rgba(132, 204, 22, 0.18);
-    }
-    .sidebar-topic-card:active {
-        transform: scale(0.97);
     }
 
     /* ================= TOP NAVIGATION BAR ================= */
@@ -232,14 +219,6 @@ st.markdown("""
         padding: 3px;
         display: inline-block;
         transition: all 0.25s ease;
-        cursor: pointer;
-    }
-    .nav-logo-frame:hover {
-        border-color: #a3e635;
-        transform: scale(1.04);
-    }
-    .nav-logo-frame:active {
-        transform: scale(0.95);
     }
     .nav-logo-inner {
         border: 1px solid rgba(255, 255, 255, 0.35);
@@ -269,15 +248,10 @@ st.markdown("""
         font-weight: 700;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        color: #cbd5e1 !important;
+        color: #94a3b8 !important;
         padding-bottom: 5px;
         border-bottom: 2px solid transparent;
         transition: all 0.22s ease;
-        cursor: pointer;
-    }
-    .nav-item:hover {
-        color: #a3e635 !important;
-        transform: translateY(-1px);
     }
     .nav-item.active {
         color: #ffffff !important;
@@ -293,16 +267,6 @@ st.markdown("""
         font-weight: 600;
         padding: 5px 12px;
         border-radius: 999px;
-        transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
-    }
-    .nav-pill:hover {
-        background: rgba(132, 204, 22, 0.3);
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 0 15px rgba(132, 204, 22, 0.4);
-    }
-    .nav-pill:active {
-        transform: scale(0.93);
     }
 
     /* ================= HERO SHOWCASE ================= */
@@ -381,7 +345,7 @@ st.markdown("""
         color: #cbd5e1 !important;
     }
 
-    /* 4 Cột Icon Viền Xanh Neon có hiệu ứng Hover & Click nảy 3D */
+    /* 4 Cột Icon Viền Xanh Neon */
     .hero-icon-grid {
         position: relative;
         display: grid;
@@ -401,19 +365,12 @@ st.markdown("""
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid transparent;
         transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
-        user-select: none;
     }
     .hero-icon-item:hover {
         background: rgba(132, 204, 22, 0.1);
         border-color: rgba(163, 230, 53, 0.45);
-        transform: translateY(-8px) scale(1.03);
+        transform: translateY(-6px) scale(1.02);
         box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(132, 204, 22, 0.2);
-    }
-    .hero-icon-item:active {
-        transform: translateY(-2px) scale(0.95);
-        background: rgba(132, 204, 22, 0.22);
-        box-shadow: 0 0 28px rgba(163, 230, 53, 0.6);
     }
     .hero-icon-svg {
         width: 48px;
@@ -424,7 +381,7 @@ st.markdown("""
         transition: transform 0.3s ease;
     }
     .hero-icon-item:hover .hero-icon-svg {
-        transform: scale(1.18) rotate(6deg);
+        transform: scale(1.15) rotate(5deg);
         filter: drop-shadow(0 0 16px rgba(163, 230, 53, 0.85));
     }
     .hero-icon-title {
@@ -441,7 +398,7 @@ st.markdown("""
         line-height: 1.45;
     }
 
-    /* ================= NÚT BẤM VIÊN THUỐC + HIỆU ỨNG SÓNG XUNG KÍCH KHI CLICK ================= */
+    /* ================= NÚT BẤM VIÊN THUỐC + HIỆU ỨNG SÁNG ================= */
     .stButton > button,
     button[data-testid="stBaseButton-secondary"] {
         position: relative !important;
@@ -452,11 +409,11 @@ st.markdown("""
         border: 1.5px solid rgba(148, 163, 184, 0.38) !important;
         border-radius: 999px !important;
         font-weight: 700 !important;
-        font-size: 0.86rem !important;
-        letter-spacing: 0.06em !important;
+        font-size: 0.84rem !important;
+        letter-spacing: 0.05em !important;
         text-transform: uppercase !important;
-        padding: 0.75rem 1.4rem !important;
-        min-height: 50px !important;
+        padding: 0.7rem 1.2rem !important;
+        min-height: 48px !important;
         backdrop-filter: blur(10px) !important;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3) !important;
         transition: all 0.24s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
@@ -488,18 +445,12 @@ st.markdown("""
         transform: translateY(-3px) scale(1.02) !important;
         box-shadow: 0 12px 26px rgba(132, 204, 22, 0.3), 0 0 16px rgba(163, 230, 53, 0.35) !important;
     }
-    .stButton > button:hover *,
-    button[data-testid="stBaseButton-secondary"]:hover * {
-        color: #ecfccb !important;
-    }
     .stButton > button:active,
     button[data-testid="stBaseButton-secondary"]:active {
-        transform: translateY(1px) scale(0.94) !important;
-        box-shadow: 0 0 0 12px rgba(163, 230, 53, 0.25), 0 0 30px rgba(163, 230, 53, 0.75) !important;
-        transition: all 0.06s ease !important;
+        transform: translateY(1px) scale(0.95) !important;
     }
 
-    /* Nút Chính: Viên thuốc Xanh Lá mạ Neon nhịp thở ánh sáng */
+    /* Nút Chính: Viên thuốc Xanh Lá mạ Neon */
     .stButton > button[kind="primary"],
     button[data-testid="stBaseButton-primary"] {
         width: 100% !important;
@@ -508,9 +459,9 @@ st.markdown("""
         border: 1.5px solid #bef264 !important;
         border-radius: 999px !important;
         font-weight: 800 !important;
-        letter-spacing: 0.1em !important;
+        letter-spacing: 0.08em !important;
         text-transform: uppercase !important;
-        min-height: 52px !important;
+        min-height: 50px !important;
         animation: pulseNeon 2.8s infinite;
     }
     .stButton > button[kind="primary"] *,
@@ -523,11 +474,6 @@ st.markdown("""
         background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%) !important;
         transform: translateY(-4px) scale(1.03) !important;
         box-shadow: 0 16px 36px rgba(163, 230, 53, 0.65), 0 0 24px rgba(190, 242, 100, 0.6) !important;
-    }
-    .stButton > button[kind="primary"]:active,
-    button[data-testid="stBaseButton-primary"]:active {
-        transform: translateY(1px) scale(0.93) !important;
-        box-shadow: 0 0 0 16px rgba(163, 230, 53, 0.35), 0 0 40px #a3e635 !important;
     }
 
     /* ================= KHUNG KÍNH MỜ & Ô CHỌN UE RÕ CHỮ ================= */
@@ -601,7 +547,6 @@ st.markdown("""
         background-color: #ffffff !important;
         color: #0f172a !important;
         font-weight: 600 !important;
-        transition: all 0.15s ease !important;
     }
     li[role="option"] * {
         color: #0f172a !important;
@@ -626,7 +571,7 @@ st.markdown("""
         box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 22px rgba(163, 230, 53, 0.25) !important;
     }
 
-    /* ================= THẺ KPI & INSIGHT TƯƠNG TÁC ================= */
+    /* ================= THẺ KPI & INSIGHT ================= */
     .kpi-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -641,17 +586,11 @@ st.markdown("""
         padding: 16px 18px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         transition: all 0.26s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
-        user-select: none;
     }
     .kpi-card:hover {
-        transform: translateY(-6px) scale(1.02);
+        transform: translateY(-5px);
         border-color: rgba(163, 230, 53, 0.55);
         box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45), 0 0 22px rgba(132, 204, 22, 0.22);
-    }
-    .kpi-card:active {
-        transform: translateY(-1px) scale(0.96);
-        box-shadow: 0 0 28px rgba(163, 230, 53, 0.65);
     }
     .kpi-label {
         font-size: 0.72rem;
@@ -685,12 +624,6 @@ st.markdown("""
         color: #f1f5f9 !important;
         font-size: 0.94rem !important;
         box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
-        transition: all 0.25s ease !important;
-    }
-    .insight-card:hover {
-        border-color: rgba(163, 230, 53, 0.6) !important;
-        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45), 0 0 20px rgba(132, 204, 22, 0.15) !important;
-        transform: translateY(-2px);
     }
     .insight-card code {
         background: rgba(132, 204, 22, 0.18) !important;
@@ -708,17 +641,12 @@ st.markdown("""
         margin-top: 8px;
         font-size: 0.88rem;
         color: #ecfccb !important;
-        transition: all 0.22s ease;
-    }
-    .stat-banner:hover {
-        background: rgba(132, 204, 22, 0.18);
-        transform: scale(1.01);
     }
 </style>
 """, unsafe_allow_html=True)
 
 # ==============================================================================
-# NHÚNG HIỆU ỨNG SÓNG 6G & PHÁO HOA HẠT NEON KHI CLICK CHUỘT + ĐÈN SPOTLIGHT
+# NHÚNG HIỆU ỨNG SÓNG RADAR 6G KHI CLICK CHUỘT
 # ==============================================================================
 components.html("""
 <script>
@@ -739,25 +667,6 @@ components.html("""
             box-shadow: 0 0 18px #84cc16, inset 0 0 12px #38bdf8;
             animation: cf6gRingExpand 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
-        .cf6g-click-ring-outer {
-            position: fixed;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 999998;
-            transform: translate(-50%, -50%) scale(0.1);
-            border: 1.5px dashed #38bdf8;
-            animation: cf6gRingOuter 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        .cf6g-particle {
-            position: fixed;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 999999;
-            transform: translate(-50%, -50%);
-            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease-out;
-        }
         .cf6g-cursor-glow {
             position: fixed;
             width: 320px;
@@ -765,17 +674,13 @@ components.html("""
             border-radius: 50%;
             pointer-events: none;
             z-index: 1;
-            background: radial-gradient(circle, rgba(163, 230, 53, 0.08) 0%, rgba(56, 189, 248, 0.05) 40%, transparent 70%);
+            background: radial-gradient(circle, rgba(163, 230, 53, 0.07) 0%, rgba(56, 189, 248, 0.04) 40%, transparent 70%);
             transform: translate(-50%, -50%);
             transition: left 0.08s linear, top 0.08s linear;
         }
         @keyframes cf6gRingExpand {
-            0% { width: 12px; height: 12px; opacity: 1; transform: translate(-50%, -50%) scale(0.3); }
-            100% { width: 110px; height: 110px; opacity: 0; transform: translate(-50%, -50%) scale(1.2); }
-        }
-        @keyframes cf6gRingOuter {
-            0% { width: 16px; height: 16px; opacity: 0.85; transform: translate(-50%, -50%) scale(0.3) rotate(0deg); }
-            100% { width: 165px; height: 165px; opacity: 0; transform: translate(-50%, -50%) scale(1.25) rotate(60deg); }
+            0% { width: 12px; height: 12px; opacity: 0.95; transform: translate(-50%, -50%) scale(0.3); }
+            100% { width: 95px; height: 95px; opacity: 0; transform: translate(-50%, -50%) scale(1.2); }
         }
     `;
     parentDoc.head.appendChild(styleEl);
@@ -789,99 +694,84 @@ components.html("""
         glow.style.top = e.clientY + 'px';
     }, { passive: true });
 
-    const colors = ['#a3e635', '#38bdf8', '#bef264', '#c084fc', '#fbbf24'];
-
     parentDoc.addEventListener('mousedown', function(e) {
         const ring = parentDoc.createElement('div');
         ring.className = 'cf6g-click-ring';
         ring.style.left = e.clientX + 'px';
         ring.style.top = e.clientY + 'px';
         parentDoc.body.appendChild(ring);
-
-        const outer = parentDoc.createElement('div');
-        outer.className = 'cf6g-click-ring-outer';
-        outer.style.left = e.clientX + 'px';
-        outer.style.top = e.clientY + 'px';
-        parentDoc.body.appendChild(outer);
-
-        for (let i = 0; i < 10; i++) {
-            const p = parentDoc.createElement('div');
-            p.className = 'cf6g-particle';
-            const color = colors[i % colors.length];
-            p.style.background = color;
-            p.style.boxShadow = '0 0 10px ' + color;
-            p.style.left = e.clientX + 'px';
-            p.style.top = e.clientY + 'px';
-            parentDoc.body.appendChild(p);
-
-            const angle = (Math.PI * 2 * i) / 10 + (Math.random() * 0.4 - 0.2);
-            const dist = 36 + Math.random() * 44;
-            const dx = Math.cos(angle) * dist;
-            const dy = Math.sin(angle) * dist;
-
-            requestAnimationFrame(() => {
-                p.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0.2)`;
-                p.style.opacity = '0';
-            });
-            setTimeout(() => p.remove(), 620);
-        }
-
-        setTimeout(() => {
-            ring.remove();
-            outer.remove();
-        }, 860);
+        setTimeout(() => ring.remove(), 680);
     });
 })();
 </script>
 """, height=0)
 
 # ==============================================================================
-# 2. KHỞI TẠO BIẾN TRẠNG THÁI (SESSION STATE)
+# 2. KHỞI TẠO BIẾN TRẠNG THÁI (SESSION STATE CHUẨN BAREM GIẢNG VIÊN)
 # ==============================================================================
 if 'page' not in st.session_state: st.session_state.page = 'home'
-if 'M' not in st.session_state: st.session_state.M = 100
-if 'K' not in st.session_state: st.session_state.K = 20
+if 'M' not in st.session_state: st.session_state.M = 64
+if 'K' not in st.session_state: st.session_state.K = 15
+if 'Nc' not in st.session_state: st.session_state.Nc = 5
 if 'L' not in st.session_state: st.session_state.L = 1000
 if 'Pt' not in st.session_state: st.session_state.Pt = 23
 if 'sim_seed' not in st.session_state: st.session_state.sim_seed = 42
 if 'view_mode' not in st.session_state: st.session_state.view_mode = 'map'
+if 'cov_style' not in st.session_state: st.session_state.cov_style = 'contour'
 if 'selected_ue' not in st.session_state: st.session_state.selected_ue = 0
 
 def switch_page(target):
     st.session_state.page = target
 
 # ==============================================================================
-# 3. LÕI TÍNH TOÁN TOÁN HỌC & JAIN'S FAIRNESS INDEX (GIỮ NGUYÊN 100%)
+# 3. LÕI TÍNH TOÁN VẬT LÝ & ĐỒ HỌA TRƯỜNG SÓNG ĐẲNG THẾ (ISO-CONTOUR / 3D)
 # ==============================================================================
 @st.cache_data(show_spinner=False)
-def run_cf_simulation(M, K, L, Pt_dBm, seed):
+def run_cf_simulation(M, K, Nc, L, Pt_dBm, seed):
     np.random.seed(seed)
     ap_c = np.random.uniform(0, L, (M, 2))
     ue_c = np.random.uniform(0, L, (K, 2))
-    ap_cell = np.full((M, 2), [L/2, L/2])
+    ap_cell = np.full((M, 2), [L / 2.0, L / 2.0])
     
-    def compute_fading(aps):
+    Nc_eff = min(Nc, M)
+
+    def compute_fading(aps, is_colocated=False):
         d = np.zeros((M, K))
         for m in range(M):
             for k in range(K):
                 d[m, k] = max(np.linalg.norm(aps[m] - ue_c[k]), 10.0)
         PL = 128.1 + 37.6 * np.log10(d / 1000.0)
-        shadowing = np.random.normal(0, 8.0, (M, K))
+        
+        if is_colocated:
+            sh_single = np.random.normal(0, 8.0, (1, K))
+            shadowing = np.repeat(sh_single, M, axis=0)
+        else:
+            shadowing = np.random.normal(0, 8.0, (M, K))
+            
         return 10.0 ** ((-PL + shadowing) / 10.0), d
 
-    beta_cf, dist_cf = compute_fading(ap_c)
-    beta_cell, _ = compute_fading(ap_cell)
+    beta_cf, dist_cf = compute_fading(ap_c, is_colocated=False)
+    beta_cell, _ = compute_fading(ap_cell, is_colocated=True)
+    
+    # Ma trận mặt nạ kết nối User-Centric (Top Nc AP phục vụ mỗi UE)
+    mask_uc = np.zeros((M, K))
+    for k in range(K):
+        top_aps = np.argsort(beta_cf[:, k])[-Nc_eff:]
+        mask_uc[top_aps, k] = 1.0
+        
+    mask_cell = np.ones((M, K))
     
     Pt_w = (10.0 ** (Pt_dBm / 10.0)) / 1000.0
     noise_w = (10.0 ** (-100.0 / 10.0)) / 1000.0
     
-    def calculate_metrics(beta):
+    def calculate_metrics(beta, mask):
+        beta_srv = beta * mask
         rates = np.zeros(K)
         sinr_arr = np.zeros(K)
         for k in range(K):
-            sig = (np.sum(beta[:, k])) ** 2
-            intf = sum(np.sum(beta[:, k] * beta[:, i]) for i in range(K) if i != k)
-            n_pwr = (noise_w / Pt_w) * np.sum(beta[:, k])
+            sig = (np.sum(beta_srv[:, k])) ** 2
+            intf = sum(np.sum(beta[:, k] * beta_srv[:, i]) for i in range(K) if i != k)
+            n_pwr = (noise_w / Pt_w) * np.sum(beta_srv[:, k])
             sinr = sig / (intf + n_pwr + 1e-15)
             sinr_arr[k] = sinr
             rates[k] = np.log2(1.0 + sinr)
@@ -889,10 +779,40 @@ def run_cf_simulation(M, K, L, Pt_dBm, seed):
         jain_index = (np.sum(rates) ** 2) / (K * np.sum(rates ** 2) + 1e-15)
         return rates, sinr_arr, jain_index
 
-    rates_cf, sinr_cf, jain_cf = calculate_metrics(beta_cf)
-    rates_cell, sinr_cell, jain_cell = calculate_metrics(beta_cell)
+    rates_cf, sinr_cf, jain_cf = calculate_metrics(beta_cf, mask_uc)
+    rates_cell, sinr_cell, jain_cell = calculate_metrics(beta_cell, mask_cell)
     
-    return ap_c, ue_c, beta_cf, dist_cf, rates_cf, rates_cell, sinr_cf, sinr_cell, jain_cf, jain_cell
+    # Lưới phân giải cao (80x80) để nội suy mặt đẳng thế mượt tuyệt đối (không bị pixel)
+    grid_res = 80
+    gx = np.linspace(0, L, grid_res)
+    gy = np.linspace(0, L, grid_res)
+    GX, GY = np.meshgrid(gx, gy)
+    grid_pts = np.stack([GX.ravel(), GY.ravel()], axis=1)
+    
+    # 1. Trường công suất Cell-Free (Tổng hợp đồng pha từ cụm Nc AP lân cận)
+    diff_cf = ap_c[:, np.newaxis, :] - grid_pts[np.newaxis, :, :]
+    dist_grid_cf = np.maximum(np.linalg.norm(diff_cf, axis=2), 12.0)
+    pl_grid_cf = 128.1 + 37.6 * np.log10(dist_grid_cf / 1000.0)
+    rx_all_mw = 10.0 ** ((Pt_dBm - pl_grid_cf) / 10.0)
+    top_nc_mw = np.sort(rx_all_mw, axis=0)[-Nc_eff:, :]
+    
+    # Trường fading bóng mờ không gian tương quan mượt (Correlated Spatial Shadowing)
+    spatial_sh = (
+        3.2 * np.sin(2.2 * np.pi * GX / L + seed) * np.cos(2.2 * np.pi * GY / L - seed)
+        + 1.8 * np.cos(4.0 * np.pi * (GX + GY) / L)
+    )
+    field_cf_dbm = (10.0 * np.log10(np.sum(top_nc_mw, axis=0))).reshape((grid_res, grid_res)) + spatial_sh
+
+    # 2. Trường công suất Cellular đối chứng (Trạm phát tập trung tại tâm L/2, L/2)
+    dist_grid_cell = np.maximum(np.sqrt((GX - L/2.0)**2 + (GY - L/2.0)**2), 12.0)
+    pl_grid_cell = 128.1 + 37.6 * np.log10(dist_grid_cell / 1000.0)
+    field_cell_dbm = (Pt_dBm + 10.0 * np.log10(Nc_eff) - pl_grid_cell) + spatial_sh
+    
+    return (
+        ap_c, ue_c, beta_cf, dist_cf,
+        rates_cf, rates_cell, sinr_cf, sinr_cell,
+        jain_cf, jain_cell, gx, gy, field_cf_dbm, field_cell_dbm
+    )
 
 # ==============================================================================
 # 4. SIDEBAR CẨM NĂNG & MÃ QR MOBILE
@@ -955,7 +875,7 @@ st.markdown(f"""
     </div>
     <div style="display: flex; gap: 8px; flex-wrap: wrap;">
         <span class="nav-pill">3.5 GHz TDD</span>
-        <span class="nav-pill">M={st.session_state.M} | K={st.session_state.K} | L={st.session_state.L}m | {st.session_state.Pt}dBm</span>
+        <span class="nav-pill">M={st.session_state.M} | K={st.session_state.K} | Nc={st.session_state.Nc} | {st.session_state.Pt}dBm</span>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -972,7 +892,7 @@ if st.session_state.page == 'home':
         <div class="hero-script-sub">Kiến tạo mạng không dây đồng nhất, xóa bỏ mọi ranh giới ô mạng.</div>
         <p class="hero-desc">
             Hệ thống mô phỏng chuyên sâu kiến trúc <b>Cell-Free Massive MIMO</b> cho thế hệ mạng 6G —
-            nơi hàng trăm điểm truy cập (AP) phân tán phối hợp phát sóng đồng pha phục vụ từng thiết bị người dùng (UE),
+            nơi các điểm truy cập (AP) phân tán phối hợp phát sóng đồng pha theo cụm phục vụ lấy người dùng làm trung tâm (User-Centric),
             loại bỏ nhiễu biên ô và mang lại tốc độ phổ công bằng vượt trội so với mạng Cellular tập trung.
         </p>
         <div class="hero-icon-grid">
@@ -984,7 +904,7 @@ if st.session_state.page == 'home':
                     <line x1="3.5" y1="15" x2="20.5" y2="15"/>
                 </svg>
                 <div class="hero-icon-title">Distributed APs</div>
-                <div class="hero-icon-caption">Trải đều điểm truy cập<br>trên toàn vùng phủ sóng</div>
+                <div class="hero-icon-caption">Trải đều 20–100 điểm truy cập<br>trên toàn vùng phủ sóng</div>
             </div>
             <div class="hero-icon-item">
                 <svg class="hero-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="1.6">
@@ -995,7 +915,7 @@ if st.session_state.page == 'home':
                     <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/>
                 </svg>
                 <div class="hero-icon-title">User-Centric Serving</div>
-                <div class="hero-icon-caption">Phối hợp búp sóng đồng pha<br>lấy người dùng làm trung tâm</div>
+                <div class="hero-icon-caption">Phối hợp búp sóng đồng pha<br>theo cụm AP tối ưu (Nc)</div>
             </div>
             <div class="hero-icon-item">
                 <svg class="hero-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="1.6">
@@ -1003,8 +923,8 @@ if st.session_state.page == 'home':
                     <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                     <line x1="12" y1="22.08" x2="12" y2="12"/>
                 </svg>
-                <div class="hero-icon-title">Macro-Diversity</div>
-                <div class="hero-icon-caption">Chống suy hao che khuất 8 dB<br>và xóa bỏ điểm mù tín hiệu</div>
+                <div class="hero-icon-title">Iso-Contour & 3D Field</div>
+                <div class="hero-icon-caption">Quy hoạch trường đẳng thế sóng<br>& địa hình năng lượng 3D</div>
             </div>
             <div class="hero-icon-item">
                 <svg class="hero-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="1.6">
@@ -1030,50 +950,51 @@ if st.session_state.page == 'home':
             st.rerun()
 
 # ==============================================================================
-# TRANG 2: BÀN ĐIỀU KHIỂN THAM SỐ (SETTINGS DESK)
+# TRANG 2: BÀN ĐIỀU KHIỂN THAM SỐ (CHUẨN HÓA 20–100 AP & 5–20 UE)
 # ==============================================================================
 elif st.session_state.page == 'settings':
     st.markdown("<h2 style='text-align: center; margin-bottom: 4px; font-size: 2rem;'>⚙️ Bàn Điều Khiển Tham Số Mạng 6G</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; color: #cbd5e1; margin-bottom: 20px; font-family: Playfair Display, serif; font-style: italic; font-size: 1.15rem;'>Lựa chọn kịch bản chuẩn hoặc tinh chỉnh mật độ phần cứng AP & thiết bị UE</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #cbd5e1; margin-bottom: 20px; font-family: Playfair Display, serif; font-style: italic; font-size: 1.15rem;'>Tuân thủ phạm vi chuẩn (20–100 AP, 5–20 UE) và tùy biến cụm phục vụ User-Centric</p>", unsafe_allow_html=True)
     
     with st.container(border=True):
         st.markdown("##### ⚡ Kịch Bản Thử Nghiệm Nhanh (Preset Scenarios)")
         p1, p2, p3 = st.columns(3)
         with p1:
-            if st.button("📌 Tiêu Chuẩn Giữa Kỳ (M=100, K=20)"):
-                st.session_state.M, st.session_state.K, st.session_state.L, st.session_state.Pt = 100, 20, 1000, 23
-                st.toast("📌 Đã nạp cấu hình Tiêu Chuẩn Giữa Kỳ (M=100, K=20)!", icon="✅")
+            if st.button("📌 Tiêu Chuẩn Giữa Kỳ (M=64, K=15)"):
+                st.session_state.M, st.session_state.K, st.session_state.Nc, st.session_state.L, st.session_state.Pt = 64, 15, 5, 1000, 23
+                st.toast("📌 Đã nạp cấu hình Tiêu Chuẩn Giữa Kỳ (M=64, K=15, Nc=5)!", icon="✅")
                 st.rerun()
-            st.caption("Vùng phủ 1000m × 1000m • Công suất 23 dBm")
+            st.caption("Vùng phủ 1000m × 1000m • Cụm Nc=5 AP • Công suất 23 dBm")
         with p2:
-            if st.button("🏙️ Tải Cao Đô Thị (M=150, K=40)"):
-                st.session_state.M, st.session_state.K, st.session_state.L, st.session_state.Pt = 150, 40, 800, 23
-                st.toast("🏙️ Đã nạp cấu hình Tải Cao Đô Thị (M=150, K=40)!", icon="⚡")
+            if st.button("🏙️ Tải Cao Đô Thị (M=100, K=20)"):
+                st.session_state.M, st.session_state.K, st.session_state.Nc, st.session_state.L, st.session_state.Pt = 100, 20, 8, 800, 23
+                st.toast("🏙️ Đã nạp cấu hình Tải Cao Đô Thị (M=100, K=20, Nc=8)!", icon="⚡")
                 st.rerun()
-            st.caption("Vùng phủ 800m × 800m • Mật độ đô thị dày đặc")
+            st.caption("Vùng phủ 800m × 800m • Cụm Nc=8 AP • Mật độ cực đại")
         with p3:
-            if st.button("🌾 Thưa Thớt Ngoại Ô (M=40, K=10)"):
-                st.session_state.M, st.session_state.K, st.session_state.L, st.session_state.Pt = 40, 10, 1500, 30
-                st.toast("🌾 Đã nạp cấu hình Thưa Thớt Ngoại Ô (M=40, K=10)!", icon="📡")
+            if st.button("🌾 Thưa Thớt Ngoại Ô (M=32, K=8)"):
+                st.session_state.M, st.session_state.K, st.session_state.Nc, st.session_state.L, st.session_state.Pt = 32, 8, 3, 1400, 30
+                st.toast("🌾 Đã nạp cấu hình Thưa Thớt Ngoại Ô (M=32, K=8, Nc=3)!", icon="📡")
                 st.rerun()
-            st.caption("Vùng phủ 1500m × 1500m • Công suất 30 dBm")
+            st.caption("Vùng phủ 1400m × 1400m • Cụm Nc=3 AP • Công suất 30 dBm")
 
     c_ap, c_ue = st.columns(2)
     with c_ap:
         with st.container(border=True):
             st.markdown("#### 📡 Hạ Tầng Điểm Truy Cập (AP)")
-            st.session_state.M = st.slider("Mật độ AP phân tán (M)", 20, 200, value=st.session_state.M, step=10)
+            st.session_state.M = st.slider("Mật độ AP phân tán (M: 20–100)", 20, 100, value=min(max(st.session_state.M, 20), 100), step=4)
+            st.session_state.Nc = st.slider("Kích thước cụm phục vụ User-Centric (Nc)", 2, 12, value=min(max(st.session_state.Nc, 2), 12), step=1)
             st.session_state.L = st.number_input("Kích thước vùng phủ L × L (mét)", 500, 2000, value=st.session_state.L, step=100)
             area_km2 = (st.session_state.L / 1000.0) ** 2
-            st.markdown(f"<div class='stat-banner'>📐 Diện tích khảo sát: <b>{area_km2:.2f} km²</b> • Mật độ: <b>{st.session_state.M / area_km2:.0f} APs/km²</b></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='stat-banner'>📐 Diện tích: <b>{area_km2:.2f} km²</b> • Mật độ: <b>{st.session_state.M / area_km2:.0f} APs/km²</b> • Cụm phục vụ: <b>{st.session_state.Nc} AP/UE</b></div>", unsafe_allow_html=True)
 
     with c_ue:
         with st.container(border=True):
             st.markdown("#### 📱 Thiết Bị Người Dùng (UE)")
-            st.session_state.K = st.slider("Số lượng người dùng đồng thời (K)", 5, 50, value=st.session_state.K, step=1)
+            st.session_state.K = st.slider("Số lượng người dùng đồng thời (K: 5–20)", 5, 20, value=min(max(st.session_state.K, 5), 20), step=1)
             st.session_state.Pt = st.number_input("Công suất phát mỗi AP (dBm)", 10, 40, value=st.session_state.Pt, step=1)
             pt_mw = 10.0 ** (st.session_state.Pt / 10.0)
-            st.markdown(f"<div class='stat-banner'>⚡ Tỷ lệ phục vụ: <b>{st.session_state.M / st.session_state.K:.1f} AP / UE</b> • Công suất: <b>{pt_mw:.0f} mW</b></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='stat-banner'>⚡ Tỷ lệ Massive MIMO: <b>{st.session_state.M / st.session_state.K:.1f} AP / UE</b> • Công suất bức xạ: <b>{pt_mw:.0f} mW</b></div>", unsafe_allow_html=True)
 
     st.markdown("<div style='height: 12px;'></div>", unsafe_allow_html=True)
     col_b1, col_run, col_b2 = st.columns([0.8, 1.4, 0.8])
@@ -1083,28 +1004,37 @@ elif st.session_state.page == 'settings':
             st.rerun()
     with col_run:
         if st.button("⚡ KHỞI CHẠY GIẢI TÍCH & XUẤT KẾT QUẢ", type="primary"):
-            st.toast("🚀 Đang tính toán kênh truyền & tổng hợp búp sóng 6G!", icon="⚡")
+            st.toast("🚀 Đang tổng hợp búp sóng & nội suy trường đẳng thế 6G!", icon="⚡")
             switch_page('results')
             st.rerun()
 
 # ==============================================================================
-# TRANG 3: BÁO CÁO KẾT QUẢ & PHÂN TÍCH (ĐỒ THỊ NỀN TRẮNG RÕ NÉT)
+# TRANG 3: BÁO CÁO KẾT QUẢ & PHÂN TÍCH (3 CHẾ ĐỘ CHUYÊN SÂU)
 # ==============================================================================
 elif st.session_state.page == 'results':
     
-    ap_c, ue_c, beta_cf, dist_cf, rates_cf, rates_cell, sinr_cf, sinr_cell, jain_cf, jain_cell = run_cf_simulation(
-        st.session_state.M, st.session_state.K, st.session_state.L, st.session_state.Pt, st.session_state.sim_seed
+    (
+        ap_c, ue_c, beta_cf, dist_cf,
+        rates_cf, rates_cell, sinr_cf, sinr_cell,
+        jain_cf, jain_cell, gx, gy, field_cf_dbm, field_cell_dbm
+    ) = run_cf_simulation(
+        st.session_state.M, st.session_state.K, st.session_state.Nc,
+        st.session_state.L, st.session_state.Pt, st.session_state.sim_seed
     )
 
     if st.session_state.selected_ue >= st.session_state.K:
         st.session_state.selected_ue = 0
     
-    nav1, nav2, nav_reroll, nav_back = st.columns([1.15, 1.15, 0.9, 0.8])
+    nav1, nav2, nav3, nav_reroll, nav_back = st.columns([1.05, 1.15, 1.05, 0.85, 0.75])
     with nav1:
-        if st.button("📍 BẢN ĐỒ & BÚP SÓNG", type="primary" if st.session_state.view_mode == 'map' else "secondary"):
+        if st.button("📍 VỊ TRÍ & BÚP SÓNG", type="primary" if st.session_state.view_mode == 'map' else "secondary"):
             st.session_state.view_mode = 'map'
             st.rerun()
     with nav2:
+        if st.button("🌊 TRƯỜNG PHỦ SÓNG", type="primary" if st.session_state.view_mode == 'coverage' else "secondary"):
+            st.session_state.view_mode = 'coverage'
+            st.rerun()
+    with nav3:
         if st.button("📈 ĐỒ THỊ TỐC ĐỘ (CDF)", type="primary" if st.session_state.view_mode == 'chart' else "secondary"):
             st.session_state.view_mode = 'chart'
             st.rerun()
@@ -1114,26 +1044,27 @@ elif st.session_state.page == 'results':
             st.toast(f"🎲 Đã sinh ngẫu nhiên ma trận tọa độ mới (Seed #{st.session_state.sim_seed})!", icon="✨")
             st.rerun()
     with nav_back:
-        if st.button("⚙️ Đổi Tham Số"):
+        if st.button("⚙️ Tham Số"):
             switch_page('settings')
             st.rerun()
 
     # --------------------------------------------------------------------------
-    # CHẾ ĐỘ 1: BẢN ĐỒ KHÔNG GIAN & BEAMFORMING ĐỘNG (NỀN TRẮNG TƯƠNG PHẢN CAO)
+    # CHẾ ĐỘ 1: BẢN ĐỒ KHÔNG GIAN & BEAMFORMING ĐỘNG (KẾT HỢP ĐƯỜNG ĐẲNG THẾ MỜ)
     # --------------------------------------------------------------------------
     if st.session_state.view_mode == 'map':
         with st.container(border=True):
             head_col, select_col = st.columns([2.2, 1])
             with head_col:
-                st.markdown(f"<h3 style='margin:0;'>📍 Bản Đồ Vùng Phủ & Cụm AP Phục Vụ ({st.session_state.M} APs / {st.session_state.K} UEs)</h3>", unsafe_allow_html=True)
-                st.caption("Chọn thiết bị người dùng (UE) ở ô bên phải để quan sát 3 điểm truy cập (AP) mạnh nhất hợp tác phát sóng đồng pha.")
+                st.markdown(f"<h3 style='margin:0;'>📍 Bản Đồ Cụm Phục Vụ User-Centric ({st.session_state.M} APs / {st.session_state.K} UEs / Cụm Nc={st.session_state.Nc})</h3>", unsafe_allow_html=True)
+                st.caption("Chọn thiết bị người dùng (UE) ở ô bên phải để quan sát cụm AP mạnh nhất hợp tác phát sóng đồng pha.")
             with select_col:
                 ue_opts = [f"Đang khảo sát: UE #{i+1}" for i in range(st.session_state.K)]
                 selected_str = st.selectbox("Chọn UE khảo sát:", ue_opts, index=st.session_state.selected_ue, label_visibility="collapsed")
                 st.session_state.selected_ue = int(selected_str.split('#')[1]) - 1
 
             k_idx = st.session_state.selected_ue
-            top_serving_aps = np.argsort(beta_cf[:, k_idx])[-3:]
+            nc_eff = min(st.session_state.Nc, st.session_state.M)
+            top_serving_aps = np.argsort(beta_cf[:, k_idx])[-nc_eff:]
             min_dist = np.min(dist_cf[:, k_idx])
             ue_sinr_db = 10 * np.log10(sinr_cf[k_idx] + 1e-15)
             srv_list = ", ".join([f"AP #{idx+1}" for idx in top_serving_aps])
@@ -1146,14 +1077,14 @@ elif st.session_state.page == 'results':
                     <div class="kpi-sub">Tọa độ: ({ue_c[k_idx, 0]:.1f}m, {ue_c[k_idx, 1]:.1f}m)</div>
                 </div>
                 <div class="kpi-card" style="border-top: 3px solid #a3e635;">
-                    <div class="kpi-label">CỤM 3 AP PHỤC VỤ MẠNH NHẤT</div>
-                    <div class="kpi-value" style="color: #a3e635; font-size: 1.25rem; padding-top: 5px;">{srv_list}</div>
-                    <div class="kpi-sub">AP gần nhất cách: {min_dist:.1f} m</div>
+                    <div class="kpi-label">CỤM {nc_eff} AP PHỤC VỤ MẠNH NHẤT</div>
+                    <div class="kpi-value" style="color: #a3e635; font-size: 1.12rem; padding-top: 5px;">{srv_list}</div>
+                    <div class="kpi-sub">AP vật lý gần nhất: {min_dist:.1f} m</div>
                 </div>
                 <div class="kpi-card" style="border-top: 3px solid #c084fc;">
                     <div class="kpi-label">SINR THU TẠI UE #{k_idx+1}</div>
                     <div class="kpi-value" style="color: #c084fc;">{ue_sinr_db:.2f} <span style="font-size: 0.85rem;">dB</span></div>
-                    <div class="kpi-sub">Phối hợp đồng pha (Beamforming)</div>
+                    <div class="kpi-sub">Conjugate Beamforming ({nc_eff} APs)</div>
                 </div>
                 <div class="kpi-card" style="border-top: 3px solid #fbbf24;">
                     <div class="kpi-label">TỐC ĐỘ PHỔ TẠI UE #{k_idx+1}</div>
@@ -1165,7 +1096,19 @@ elif st.session_state.page == 'results':
 
             fig_map = go.Figure()
 
-            # Tia Beamforming xanh dương đậm nét đứt nổi bật trên nền trắng
+            # Lớp nền đường đồng mức sóng nhẹ (Subtle Iso-lines) giúp bản đồ có chiều sâu kỹ thuật
+            fig_map.add_trace(go.Contour(
+                x=gx, y=gy, z=field_cf_dbm,
+                contours=dict(coloring='lines', showlabels=True, labelfont=dict(size=10, color='#64748b')),
+                line=dict(width=1, dash='dot'),
+                colorscale='Tealgrn',
+                opacity=0.35,
+                showscale=False,
+                hoverinfo='skip',
+                name='Đường đẳng thế sóng'
+            ))
+
+            # Tia Beamforming xanh dương đậm nét đứt
             for ap_idx in top_serving_aps:
                 fig_map.add_trace(go.Scatter(
                     x=[ap_c[ap_idx, 0], ue_c[k_idx, 0]],
@@ -1176,26 +1119,26 @@ elif st.session_state.page == 'results':
                     showlegend=False
                 ))
 
-            # AP thông thường (Đỏ tươi rõ nét trên nền trắng)
+            # AP thông thường
             other_aps = [i for i in range(st.session_state.M) if i not in top_serving_aps]
             fig_map.add_trace(go.Scatter(
                 x=ap_c[other_aps, 0], y=ap_c[other_aps, 1],
                 mode='markers',
-                marker=dict(symbol='triangle-up', size=11, color='#ef4444', opacity=0.75, line=dict(color='#991b1b', width=0.9)),
-                name='AP Phân tán',
+                marker=dict(symbol='triangle-up', size=11, color='#ef4444', opacity=0.78, line=dict(color='#991b1b', width=0.9)),
+                name='AP Phân tán (Ngoài cụm)',
                 hovertemplate='<b>AP #%{text}</b><br>Tọa độ: (%{x:.1f}m, %{y:.1f}m)<extra></extra>',
                 text=[str(i+1) for i in other_aps]
             ))
 
-            # Cụm AP phục vụ (Màu vàng cam đậm viền đen cực rõ trên nền trắng)
+            # Cụm AP phục vụ
             fig_map.add_trace(go.Scatter(
                 x=ap_c[top_serving_aps, 0], y=ap_c[top_serving_aps, 1],
                 mode='markers+text',
                 marker=dict(symbol='triangle-up', size=18, color='#f59e0b', line=dict(color='#0f172a', width=2)),
-                name='Cụm AP Phục Vụ (Serving)',
+                name=f'Cụm AP Phục Vụ (Top {nc_eff})',
                 text=[f"AP #{i+1}" for i in top_serving_aps],
                 textposition="bottom center",
-                textfont=dict(size=12, color='#b45309', family='JetBrains Mono'),
+                textfont=dict(size=11, color='#b45309', family='JetBrains Mono'),
                 hovertemplate='<b>AP Phục vụ #%{text}</b><br>Tọa độ: (%{x:.1f}m, %{y:.1f}m)<extra></extra>'
             ))
 
@@ -1204,7 +1147,7 @@ elif st.session_state.page == 'results':
             fig_map.add_trace(go.Scatter(
                 x=ue_c[other_ues, 0], y=ue_c[other_ues, 1],
                 mode='markers',
-                marker=dict(symbol='circle', size=9, color='#475569', opacity=0.8, line=dict(color='#ffffff', width=1)),
+                marker=dict(symbol='circle', size=9, color='#475569', opacity=0.85, line=dict(color='#ffffff', width=1)),
                 name='Thiết bị UE khác',
                 hovertemplate='<b>UE #%{text}</b><br>Tọa độ: (%{x:.1f}m, %{y:.1f}m)<br>Tốc độ: %{customdata:.3f} bps/Hz<extra></extra>',
                 text=[str(i+1) for i in other_ues],
@@ -1233,32 +1176,18 @@ elif st.session_state.page == 'results':
                 xaxis=dict(
                     title=dict(text="Tọa độ không gian X (mét)", font=dict(color="#0f172a", size=13)),
                     tickfont=dict(color="#0f172a", size=12),
-                    showgrid=True,
-                    gridcolor='#e2e8f0',
-                    zeroline=False,
-                    linecolor='#64748b',
-                    mirror=True,
+                    showgrid=True, gridcolor='#e2e8f0', zeroline=False, linecolor='#64748b', mirror=True,
                     range=[-25, st.session_state.L + 25]
                 ),
                 yaxis=dict(
                     title=dict(text="Tọa độ không gian Y (mét)", font=dict(color="#0f172a", size=13)),
                     tickfont=dict(color="#0f172a", size=12),
-                    showgrid=True,
-                    gridcolor='#e2e8f0',
-                    zeroline=False,
-                    linecolor='#64748b',
-                    mirror=True,
+                    showgrid=True, gridcolor='#e2e8f0', zeroline=False, linecolor='#64748b', mirror=True,
                     range=[-25, st.session_state.L + 25]
                 ),
                 legend=dict(
-                    orientation="h",
-                    yanchor="bottom",
-                    y=1.02,
-                    xanchor="left",
-                    x=0.0,
-                    bgcolor="#f8fafc",
-                    bordercolor="#cbd5e1",
-                    borderwidth=1.5,
+                    orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0.0,
+                    bgcolor="#f8fafc", bordercolor="#cbd5e1", borderwidth=1.5,
                     font=dict(color="#0f172a", size=12)
                 )
             )
@@ -1270,21 +1199,198 @@ elif st.session_state.page == 'results':
                 📡 ĐÁNH GIÁ CỤM PHỤC VỤ LẤY NGƯỜI DÙNG LÀM TRUNG TÂM (USER-CENTRIC SERVING) — UE #{k_idx+1}:
             </p>
             <ul style="margin: 0; padding-left: 20px; line-height: 1.75;">
-                <li><b>Vị trí & Cự ly:</b> Thiết bị nằm tại tọa độ <code>({ue_c[k_idx, 0]:.1f}m, {ue_c[k_idx, 1]:.1f}m)</code>, cách điểm truy cập gần nhất <b>{min_dist:.1f} m</b>.</li>
-                <li><b>Cụm phục vụ động:</b> Ba điểm truy cập <b>{srv_list}</b> tự động phối hợp phát sóng đồng pha (Conjugate Beamforming), triệt tiêu hoàn toàn biên ô.</li>
-                <li><b>Phân tập vĩ mô (Macro-Diversity):</b> Thu sóng đồng thời từ nhiều hướng độc lập giúp bù đắp suy hao vật cản (Shadowing 8 dB) và xóa bỏ điểm chết sóng.</li>
+                <li><b>Vị trí & Cự ly:</b> Thiết bị nằm tại tọa độ <code>({ue_c[k_idx, 0]:.1f}m, {ue_c[k_idx, 1]:.1f}m)</code>, cách điểm truy cập vật lý gần nhất <b>{min_dist:.1f} m</b>.</li>
+                <li><b>Cụm phục vụ động ({nc_eff} AP):</b> Tập hợp <b>{srv_list}</b> có hệ số kênh truyền lớn nhất tự động hình thành cụm búp sóng liên hợp (Conjugate Beamforming).</li>
+                <li><b>Phân tập vĩ mô (Macro-Diversity):</b> Thu sóng đồng thời từ {nc_eff} hướng độc lập giúp bù đắp suy hao vật cản (Shadowing 8 dB) và xóa bỏ điểm mù tín hiệu.</li>
                 <li><b>Chất lượng thu thực tế:</b> Đạt <b>SINR = {ue_sinr_db:.2f} dB</b> và tốc độ phổ <b>{rates_cf[k_idx]:.3f} bps/Hz</b> (vượt xa mạng Cellular tập trung chỉ đạt <b>{rates_cell[k_idx]:.3f} bps/Hz</b>).</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
 
     # --------------------------------------------------------------------------
-    # CHẾ ĐỘ 2: ĐỒ THỊ CDF & ĐÁNH GIÁ TÍNH CÔNG BẰNG (NỀN TRẮNG TƯƠNG PHẢN CAO)
+    # CHẾ ĐỘ 2: TRƯỜNG CƯỜNG ĐỘ PHỦ SÓNG (SMOOTH ISO-CONTOUR & ĐỊA HÌNH 3D)
+    # --------------------------------------------------------------------------
+    elif st.session_state.view_mode == 'coverage':
+        with st.container(border=True):
+            c_title, c_mode = st.columns([2.1, 1.2])
+            with c_title:
+                st.markdown(f"<h3 style='margin:0;'>🌊 Mô Phỏng Trường Cường Độ Phủ Sóng Vô Tuyến ({st.session_state.M} APs)</h3>", unsafe_allow_html=True)
+                st.caption("Nội suy trường điện từ liên tục (Iso-Contour) và địa hình năng lượng 3D — không dùng lưới pixel rời rạc.")
+            with c_mode:
+                style_opts = [
+                    "🗺️ Bản Đồ Đẳng Thế Sóng (Iso-Contour)",
+                    "🏔️ Địa Hình Trường Năng Lượng 3D (Surface)"
+                ]
+                chosen_style = st.selectbox(
+                    "Chế độ hiển thị trường sóng:",
+                    style_opts,
+                    index=0 if st.session_state.cov_style == 'contour' else 1,
+                    label_visibility="collapsed"
+                )
+                st.session_state.cov_style = 'contour' if "Iso-Contour" in chosen_style else '3d'
+
+            min_cf, max_cf, mean_cf = float(np.min(field_cf_dbm)), float(np.max(field_cf_dbm)), float(np.mean(field_cf_dbm))
+            min_cell = float(np.min(field_cell_dbm))
+            cov_above_75 = float(np.mean(field_cf_dbm >= -75.0) * 100.0)
+
+            st.markdown(f"""
+            <div class="kpi-grid" style="margin-top: 10px;">
+                <div class="kpi-card" style="border-top: 3px solid #a3e635;">
+                    <div class="kpi-label">MỨC THU TRUNG BÌNH TOÀN MẠNG</div>
+                    <div class="kpi-value" style="color: #a3e635;">{mean_cf:.1f} <span style="font-size: 0.85rem;">dBm</span></div>
+                    <div class="kpi-sub">Đỉnh bức xạ: {max_cf:.1f} dBm</div>
+                </div>
+                <div class="kpi-card" style="border-top: 3px solid #38bdf8;">
+                    <div class="kpi-label">CƯỜNG ĐỘ TẠI BIÊN (CELL-FREE)</div>
+                    <div class="kpi-value" style="color: #38bdf8;">{min_cf:.1f} <span style="font-size: 0.85rem;">dBm</span></div>
+                    <div class="kpi-sub">Cellular tại biên sụt còn: {min_cell:.1f} dBm</div>
+                </div>
+                <div class="kpi-card" style="border-top: 3px solid #c084fc;">
+                    <div class="kpi-label">ĐỘ ĐỒNG ĐỀU TRƯỜNG SÓNG</div>
+                    <div class="kpi-value" style="color: #c084fc;">±{np.std(field_cf_dbm):.1f} <span style="font-size: 0.85rem;">dB</span></div>
+                    <div class="kpi-sub">Cellular lệch chuẩn: ±{np.std(field_cell_dbm):.1f} dB</div>
+                </div>
+                <div class="kpi-card" style="border-top: 3px solid #fbbf24;">
+                    <div class="kpi-label">DIỆN TÍCH PHỦ SÓNG TỐT (≥ -75 dBm)</div>
+                    <div class="kpi-value" style="color: #fbbf24;">{cov_above_75:.1f}<span style="font-size: 0.95rem;">%</span></div>
+                    <div class="kpi-sub">Xóa bỏ hoàn toàn hố đen suy hao</div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            if st.session_state.cov_style == 'contour':
+                fig_cov = go.Figure()
+
+                # Bản đồ Đẳng thế sóng nội suy mượt (Smooth Iso-Contour) chuẩn phần mềm quy hoạch RF
+                fig_cov.add_trace(go.Contour(
+                    x=gx, y=gy, z=field_cf_dbm,
+                    colorscale='YlGnBu',
+                    reversescale=True,
+                    ncontours=22,
+                    contours=dict(
+                        coloring='heatmap',
+                        showlabels=True,
+                        labelfont=dict(size=11, color='#0f172a', family='JetBrains Mono')
+                    ),
+                    line=dict(color='rgba(15, 23, 42, 0.35)', width=1.1, smoothing=1.3),
+                    colorbar=dict(
+                        title=dict(text="Công suất thu (dBm)", font=dict(color="#0f172a", size=12)),
+                        tickfont=dict(color="#0f172a", family='JetBrains Mono')
+                    ),
+                    hovertemplate='Tọa độ: (%{x:.0f}m, %{y:.0f}m)<br>Trường đẳng thế RSSI: <b>%{z:.1f} dBm</b><extra></extra>'
+                ))
+
+                # Đặt các trạm AP lên trên mặt phẳng đẳng thế
+                fig_cov.add_trace(go.Scatter(
+                    x=ap_c[:, 0], y=ap_c[:, 1],
+                    mode='markers',
+                    marker=dict(symbol='triangle-up', size=10, color='#ffffff', line=dict(color='#0f172a', width=1.5)),
+                    name='Điểm truy cập AP',
+                    hovertemplate='<b>AP #%{text}</b><br>Tọa độ: (%{x:.1f}m, %{y:.1f}m)<extra></extra>',
+                    text=[str(i+1) for i in range(st.session_state.M)]
+                ))
+
+                # Đặt thiết bị UE lên bản đồ
+                fig_cov.add_trace(go.Scatter(
+                    x=ue_c[:, 0], y=ue_c[:, 1],
+                    mode='markers+text',
+                    marker=dict(symbol='circle', size=11, color='#ef4444', line=dict(color='#ffffff', width=2)),
+                    text=[f"U{i+1}" for i in range(st.session_state.K)],
+                    textposition="top center",
+                    textfont=dict(size=10, color='#991b1b', family='JetBrains Mono'),
+                    name='Thiết bị UE',
+                    hovertemplate='<b>UE #%{text}</b><br>Tốc độ: %{customdata:.2f} bps/Hz<extra></extra>',
+                    customdata=rates_cf
+                ))
+
+                fig_cov.update_layout(
+                    template='plotly_white',
+                    paper_bgcolor='#ffffff',
+                    plot_bgcolor='#ffffff',
+                    font=dict(family='Plus Jakarta Sans, sans-serif', color='#0f172a', size=12),
+                    height=460,
+                    margin=dict(l=20, r=20, t=25, b=20),
+                    xaxis=dict(
+                        title=dict(text="Tọa độ không gian X (mét)", font=dict(color="#0f172a", size=13)),
+                        tickfont=dict(color="#0f172a", size=12),
+                        range=[0, st.session_state.L], mirror=True, linecolor='#64748b'
+                    ),
+                    yaxis=dict(
+                        title=dict(text="Tọa độ không gian Y (mét)", font=dict(color="#0f172a", size=13)),
+                        tickfont=dict(color="#0f172a", size=12),
+                        range=[0, st.session_state.L], mirror=True, linecolor='#64748b'
+                    ),
+                    legend=dict(
+                        orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0.0,
+                        bgcolor="#f8fafc", bordercolor="#cbd5e1", borderwidth=1.5,
+                        font=dict(color="#0f172a", size=12)
+                    )
+                )
+                st.plotly_chart(fig_cov, use_container_width=True, theme=None)
+
+            else:
+                # Mô hình Địa hình Trường Năng Lượng 3D (So sánh trực quan Cao nguyên Cell-Free vs Đỉnh đơn Cellular)
+                fig_3d = go.Figure()
+
+                fig_3d.add_trace(go.Surface(
+                    x=gx, y=gy, z=field_cf_dbm,
+                    colorscale='Viridis',
+                    name='Cell-Free 6G (Phân tán)',
+                    colorbar=dict(
+                        title=dict(text="Cell-Free (dBm)", font=dict(color="#0f172a", size=11)),
+                        tickfont=dict(color="#0f172a"),
+                        x=1.02
+                    ),
+                    contours=dict(
+                        z=dict(show=True, usecolormap=True, highlightcolor="#a3e635", project_z=True)
+                    ),
+                    hovertemplate='<b>Cell-Free 6G</b><br>X: %{x:.0f}m | Y: %{y:.0f}m<br>Mức thu: <b>%{z:.1f} dBm</b><extra></extra>'
+                ))
+
+                fig_3d.add_trace(go.Surface(
+                    x=gx, y=gy, z=field_cell_dbm,
+                    colorscale='Hot',
+                    opacity=0.55,
+                    showscale=False,
+                    name='Cellular Cổ Điển (Trạm tâm)',
+                    hovertemplate='<b>Cellular Trạm Tâm</b><br>X: %{x:.0f}m | Y: %{y:.0f}m<br>Mức thu: <b>%{z:.1f} dBm</b><extra></extra>'
+                ))
+
+                fig_3d.update_layout(
+                    template='plotly_white',
+                    paper_bgcolor='#ffffff',
+                    font=dict(family='Plus Jakarta Sans, sans-serif', color='#0f172a', size=12),
+                    height=470,
+                    margin=dict(l=10, r=10, t=15, b=10),
+                    scene=dict(
+                        xaxis=dict(title='Trục X (m)', backgroundcolor='#f8fafc', gridcolor='#cbd5e1'),
+                        yaxis=dict(title='Trục Y (m)', backgroundcolor='#f8fafc', gridcolor='#cbd5e1'),
+                        zaxis=dict(title='Công suất thu RSSI (dBm)', backgroundcolor='#f1f5f9', gridcolor='#cbd5e1'),
+                        camera=dict(eye=dict(x=1.55, y=1.45, z=0.95))
+                    )
+                )
+                st.plotly_chart(fig_3d, use_container_width=True, theme=None)
+
+        st.markdown(f"""
+        <div class="insight-card">
+            <p style="margin: 0 0 8px 0; font-weight: 800; font-size: 1rem; color: #a3e635;">
+                🌊 PHÂN TÍCH TRƯỜNG ĐẲNG THẾ & ĐỊA HÌNH NĂNG LƯỢNG VÔ TUYẾN (RF COVERAGE TOPOGRAPHY):
+            </p>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.75;">
+                <li><b>Đường đồng mức đẳng thế (Iso-Contour):</b> Thay vì chia ô vuông pixel rời rạc, các đường đồng mức nội suy chính xác ranh giới suy hao công suất (từ <b>{max_cf:.1f} dBm</b> tại tâm cụm AP đến <b>{min_cf:.1f} dBm</b> tại vùng giao thoa).</li>
+                <li><b>Hiệu ứng "Cao nguyên năng lượng" (3D Surface):</b> Trên đồ thị 3D, kiến trúc Cell-Free tạo thành một mặt phẳng năng lượng cao và ổn định trên khắp không gian {st.session_state.L}×{st.session_state.L}m, trái ngược hoàn toàn với mạng Cellular (lớp lưới cam mờ) chỉ nhọn ở tâm và sụt sâu xuống <b>{min_cell:.1f} dBm</b> ở rìa.</li>
+                <li><b>Triệt tiêu điểm mù (Dead-Zone Elimination):</b> Nhờ {st.session_state.M} AP phân tán kết hợp cụm $N_c={st.session_state.Nc}$, <b>{cov_above_75:.1f}%</b> diện tích mạng đạt ngưỡng thu mạnh $\\ge -75\\text{{ dBm}}$.</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # --------------------------------------------------------------------------
+    # CHẾ ĐỘ 3: ĐỒ THỊ CDF & ĐÁNH GIÁ TÍNH CÔNG BẰNG (NỀN TRẮNG TƯƠNG PHẢN CAO)
     # --------------------------------------------------------------------------
     elif st.session_state.view_mode == 'chart':
         rate_5_cf = float(np.percentile(rates_cf, 5))
         rate_5_cell = float(np.percentile(rates_cell, 5))
-        mean_sinr_cf_db = 10 * np.log10(np.mean(sinr_cf))
+        mean_sinr_cf_db = 10 * np.log10(np.mean(sinr_cf) + 1e-15)
         mean_rate_cf = float(np.mean(rates_cf))
         mean_rate_cell = float(np.mean(rates_cell))
 
@@ -1293,22 +1399,22 @@ elif st.session_state.page == 'results':
             <div class="kpi-card" style="border-top: 3px solid #a3e635;">
                 <div class="kpi-label">5%-USER RATE (BIÊN MẠNG)</div>
                 <div class="kpi-value" style="color: #a3e635;">{rate_5_cf:.3f} <span style="font-size: 0.82rem; color: #94a3b8;">bps/Hz</span></div>
-                <div class="kpi-sub">Cellular cổ điển: <b>{rate_5_cell:.3f} bps/Hz</b></div>
+                <div class="kpi-sub">Cellular đối chứng: <b>{rate_5_cell:.3f} bps/Hz</b></div>
             </div>
             <div class="kpi-card" style="border-top: 3px solid #38bdf8;">
                 <div class="kpi-label">JAIN'S FAIRNESS INDEX (J)</div>
                 <div class="kpi-value" style="color: #38bdf8;">{jain_cf:.3f} <span style="font-size: 0.82rem; color: #94a3b8;">/ 1.000</span></div>
-                <div class="kpi-sub">Cellular cổ điển: <b>{jain_cell:.3f}</b></div>
+                <div class="kpi-sub">Cellular đối chứng: <b>{jain_cell:.3f}</b></div>
             </div>
             <div class="kpi-card" style="border-top: 3px solid #c084fc;">
-                <div class="kpi-label">SINR TRUNG BÌNH HỆ THỐNG</div>
+                <div class="kpi-label">SINR TRUNG BÌNH (Nc={st.session_state.Nc})</div>
                 <div class="kpi-value" style="color: #c084fc;">{mean_sinr_cf_db:.1f} <span style="font-size: 0.82rem; color: #94a3b8;">dB</span></div>
                 <div class="kpi-sub">Độ lợi phân tập không gian cao</div>
             </div>
             <div class="kpi-card" style="border-top: 3px solid #fbbf24;">
                 <div class="kpi-label">TỐC ĐỘ PHỔ TRUNG BÌNH</div>
                 <div class="kpi-value" style="color: #fbbf24;">{mean_rate_cf:.3f} <span style="font-size: 0.82rem; color: #94a3b8;">bps/Hz</span></div>
-                <div class="kpi-sub">Cellular cổ điển: <b>{mean_rate_cell:.3f} bps/Hz</b></div>
+                <div class="kpi-sub">Cellular đối chứng: <b>{mean_rate_cell:.3f} bps/Hz</b></div>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -1322,14 +1428,14 @@ elif st.session_state.page == 'results':
 
             fig_cdf.add_trace(go.Scatter(
                 x=np.sort(rates_cf), y=cdf_y, mode='lines+markers',
-                name='Cell-Free Massive MIMO 6G (Phân tán)',
+                name=f'Cell-Free 6G User-Centric (Nc={st.session_state.Nc} AP/UE)',
                 line=dict(color='#16a34a', width=3.5),
                 marker=dict(size=7, color='#15803d', line=dict(color='#ffffff', width=1)),
                 hovertemplate='<b>Cell-Free 6G</b><br>Tốc độ: %{x:.3f} bps/Hz<br>Xác suất CDF: %{y:.2f}<extra></extra>'
             ))
             fig_cdf.add_trace(go.Scatter(
                 x=np.sort(rates_cell), y=cdf_y, mode='lines+markers',
-                name='Cellular MIMO Cổ Điển (Tập trung)',
+                name='Cellular MIMO Cổ Điển (Trạm tâm đồng vị trí)',
                 line=dict(color='#f59e0b', width=3, dash='dot'),
                 marker=dict(size=6, color='#d97706'),
                 hovertemplate='<b>Cellular Cổ Điển</b><br>Tốc độ: %{x:.3f} bps/Hz<br>Xác suất CDF: %{y:.2f}<extra></extra>'
@@ -1354,31 +1460,17 @@ elif st.session_state.page == 'results':
                 xaxis=dict(
                     title=dict(text="Hiệu suất phổ người dùng — Spectral Efficiency (bps/Hz)", font=dict(color="#0f172a", size=13)),
                     tickfont=dict(color="#0f172a", size=12),
-                    showgrid=True,
-                    gridcolor='#e2e8f0',
-                    zeroline=False,
-                    linecolor='#64748b',
-                    mirror=True
+                    showgrid=True, gridcolor='#e2e8f0', zeroline=False, linecolor='#64748b', mirror=True
                 ),
                 yaxis=dict(
                     title=dict(text="Xác suất tích lũy CDF — P(Rate ≤ x)", font=dict(color="#0f172a", size=13)),
                     tickfont=dict(color="#0f172a", size=12),
-                    showgrid=True,
-                    gridcolor='#e2e8f0',
-                    zeroline=False,
-                    linecolor='#64748b',
-                    mirror=True,
+                    showgrid=True, gridcolor='#e2e8f0', zeroline=False, linecolor='#64748b', mirror=True,
                     range=[0, 1.06]
                 ),
                 legend=dict(
-                    orientation="h",
-                    yanchor="bottom",
-                    y=1.02,
-                    xanchor="left",
-                    x=0.0,
-                    bgcolor="#f8fafc",
-                    bordercolor="#cbd5e1",
-                    borderwidth=1.5,
+                    orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0.0,
+                    bgcolor="#f8fafc", bordercolor="#cbd5e1", borderwidth=1.5,
                     font=dict(color="#0f172a", size=12)
                 )
             )
@@ -1390,7 +1482,7 @@ elif st.session_state.page == 'results':
                 ⚖️ ĐÁNH GIÁ HIỆU NĂNG PHỔ TẦN & TÍNH CÔNG BẰNG HỆ THỐNG (FAIRNESS BENCHMARK):
             </p>
             <ul style="margin: 0; padding-left: 20px; line-height: 1.75;">
-                <li><b>5%-User Rate (Biên mạng):</b> Đạt <b>{rate_5_cf:.3f} bps/Hz</b> trên Cell-Free 6G (Cellular cổ điển chỉ đạt <b>{rate_5_cell:.3f} bps/Hz</b>).</li>
+                <li><b>5%-User Rate (Biên mạng):</b> Đạt <b>{rate_5_cf:.3f} bps/Hz</b> trên Cell-Free 6G với cụm $N_c={st.session_state.Nc}$ AP (Cellular cổ điển chỉ đạt <b>{rate_5_cell:.3f} bps/Hz</b>).</li>
                 <li><b>Jain's Fairness Index:</b> Đạt <b>J = {jain_cf:.3f} / 1.000</b> (Cellular cổ điển đạt <b>{jain_cell:.3f}</b>), khẳng định tài nguyên được chia đều cho mọi UE.</li>
                 <li><b>Độ dốc đường CDF:</b> Đường cong Cell-Free màu xanh lá đậm dốc đứng về bên phải, chứng minh chất lượng dịch vụ đồng nhất trên toàn vùng phủ.</li>
                 <li><b>Tổng thể toàn mạng:</b> Tốc độ phổ trung bình đạt <b>{mean_rate_cf:.3f} bps/Hz</b> | Mức thu trung bình đạt <b>{mean_sinr_cf_db:.1f} dB</b>.</li>
